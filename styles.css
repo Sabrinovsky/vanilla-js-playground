@@ -1,0 +1,68 @@
+:root {
+  --purple: #cdb4db;
+  --pink: #ffc8dd;
+  --dark-pink: #ffafcc;
+  --blue: #bde0fe;
+  --dark-blue: #a2d2ff;
+  --font-color: #856398;
+}
+
+body {
+  box-sizing: content-box;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+
+  color: var(--font-color);
+}
+
+.header {
+  height: 60px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  /* background-color: var(--pink); */
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border-color: var(--dark-pink);
+  border-width: 3px;
+  border-radius: 5px;
+  color: var(--font-color);
+}
+
+.button:hover {
+  background-color: var(--dark-pink);
+  color: white;
+}
+
+.dialog {
+  /* display: inline; */
+  height: 500px;
+  width: 600px;
+  background-color: var(--dark-pink);
+  &::backdrop {
+    background-color: #ccb0dc85;
+  }
+}
+
+button{
+  box-sizing: content-box;
+}
+
+button:hover{
+  outline: 5px solid var(--dark-pink);
+  /* border-width: 2px; */
+}
